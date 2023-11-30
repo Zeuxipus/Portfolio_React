@@ -1,5 +1,5 @@
 import Layout from "./component/layout/layout";
-import imageSrc from "./style/img/photo_de_profil_cartoon-removebg-preview.png"
+import imageSrc from "./style/img/photo_de_profil_cartoon-removebg-preview.png";
 
 function App() {
   // let toto = "tata";
@@ -8,13 +8,24 @@ function App() {
     <Layout>
       <div className="container">
         <div className="hero">
-          <h4 id="home">Heyy !</h4>
-          <h2>Je suis <span id="text">Orlane</span></h2>
-          <div className="text">
-            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec diam ultricies, ornare.lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec diam ultricies, ornare.lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec diam ultricies, ornare
-            </p>
+          <div className="flex">
+            <div className="flex flex-col justify-center">
+              <h4 id="home">Heyy !</h4>
+              <h2>
+                Je suis <span id="text">Orlane</span>
+              </h2>
+              <div className="text">
+                <p>
+                  lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  nec diam ultricies, ornare.lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Sed nec diam ultricies,
+                  ornare.lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Sed nec diam ultricies, ornare
+                </p>
+              </div>
+            </div>
+            <img className="hidden lg:block" src={imageSrc} alt="profil" />
           </div>
-          <img src={imageSrc} alt="profil"/>
         </div>
         {/* ... Autres parties de votre contenu */}
       </div>
